@@ -1,0 +1,164 @@
+Press q to dismiss, <Tab> to lose focus
+
+Editing {{{
+#------------------------------------
+ ;    :
+ W    Update | Bwipeout
+ P    Replace "word" with last yank
+
+ (d/c)ib  Del inside any bracket
+ (d/c)iq  Del inside any quote
+
+ Jj   Join  Keep Cur Pos
+ Js   Split Keep Cur Pos
+
+ <A-j/k> Move line/Selected Up/Dn
+
+ <C-j/k> Instert Line below/above
+
+<I>
+  fd   <Esc>
+
+ <Leader>
+ <CR>   :nohilight
+ (n) i  Insert n spaces
+  w     :write
+  gc    Dup line commnet orig
+  *     Seach word at Cursor
+
+
+#------------------------------------
+}}}
+Nav/Search/Win {{{2
+#------------------------------------
+ Normal:
+#----------
+  H/L         ^/$ (Bol/Eol)
+  gh          Edit filename @ cursor vsplit
+  gl          Active Buffer last position
+  gb          Last Buffer
+  <C-h/l/j/k> Window Nav
+ <C-w>c       Close Window
+ <M-hjkl>     Resize Window
+ s/S          Sneak (2 char or 1 char<CR>
+ f/F          Smart Fint
+
+  h col: 1    Close Fold
+  l col: 1    Open Fold
+  o col: 1    Open Fold
+
+ Insert:
+#----------
+  <C-h> Left
+  <C-l> Right
+
+
+#------------------------------------
+}}}
+NeoTerm {{{2
+ Commands:
+#------------------------------------
+ :ntv       New Vert  Term
+ :nts       New Split Term
+ :ntn       Next Term
+ :ntp       Prev Term
+
+ :tclear  n  Clear n term
+ :tclose  n  Close n term
+ :tkill   n  Kill  n Term
+ :topen   n  Open  n Term
+ :tc      n  Send Cmd to n Term
+ :telixir n  Start Iex  n Term
+#------------------------------------
+}}}
+Buffers/Tabs {{{2
+ Commands:
+#------------------------------------
+ :Bx    Force Buffer Wipe
+ :bx    Buffer Close
+ :bxx   Force Buffer Close
+ :bc    Close Window
+
+Keymap:
+#------------------------------------
+ <A-p>    Prev Tab
+ <A-n>    Next Tab
+ <A-g>   Select Buffer
+#------------------------------------
+}}}
+LSP/Completion/snips {{{2
+Completion
+#------------------------------------
+ <C-p>     Prev
+ <C-n>     Next
+ <C-f/b>   Scroll Docs
+ <C-Space> Complete
+ <C-c>     Close
+ <CR>      Confirm
+
+Snippets
+#------------------------------------
+ C-k {i/s} Is expandableb ?
+ C-k {i/s} Jump Forward
+ C-j {i/s} Jump Back
+
+LSP
+#------------------------------------
+<Leader>
+  lk     Hover/Doc
+  lf     Format
+  ld     Diagnostic
+  li     Implementation
+  ll     Set LocalList
+  ls     Signature
+  lt     Type Definition
+  l]     Next
+  l[     Prev
+#------------------------------------
+}}}
+Telecope/Nvim-Tree {{{2
+#------------------------------------
+ :nt    TreeFind Toggle
+ :ntt   Tree Toggle
+ :ntr   Tree Refresh
+ g?     Show Keybindings (help)
+
+<leader>
+  fb    Buffers
+  fB    Browser
+  fc    Cmd History (vim)
+  ff    Find File
+  fg    Grep
+  fh    Help Tags
+  fr    Receint
+  fR    Registers
+  fn    New Buffer
+  fq    Quickfix
+  ft    Tags (Buffer)
+  fT    Tags
+
+#------------------------------------
+}}}
+Toggles {{{2
+#------------------------------------
+ :Tcolor    Colorizer
+ :Tindent   Indtent lines
+ :nt        LuaTree
+ :echeat    Edit Cheat40.txt
+
+ <C-w>o     Win Maximizer
+
+ <Leader>
+   ?  Cheat40
+
+}}}
+Packer {{{2
+#------------------------------------
+ :PS   PackerSync
+ :PC   PackerCompile
+ :PU   PackerUpdate
+}}}
+
+
+
+# -------------------------------------
